@@ -15,7 +15,7 @@ Hub público de proyectos de IA generativa: orquestación de agentes, ingenierí
 | Kiro Lambda Benchmark | [GitHub](https://github.com/rzenil/kiro-lambda-benchmark) | [ZIP](https://github.com/rzenil/kiro-lambda-benchmark/archive/refs/heads/main.zip) |
 | Kiro Kafka · Fargate · Oracle Lab | [GitHub](https://github.com/rzenil/kiro-kafka-fargate-oracle-lab) | [ZIP](https://github.com/rzenil/kiro-kafka-fargate-oracle-lab/archive/refs/heads/main.zip) |
 | Agent Harness Lab | [GitHub](https://github.com/rzenil/agent-harness-lab) | [ZIP](https://github.com/rzenil/agent-harness-lab/archive/refs/heads/main.zip) |
-| Parlay Scout | [GitHub](https://github.com/rzenil/parlay-scout-ev) | [ZIP](https://github.com/rzenil/parlay-scout-ev/archive/refs/heads/main.zip) |
+
 
 
 ## Desarrollo
