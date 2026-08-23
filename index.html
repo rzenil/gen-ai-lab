@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gen·AI Lab — Rudy Zenil</title>
-<meta name="description" content="Laboratorio personal de IA generativa: orquestación de agentes e ingeniería asistida con GenAI.">
+<meta name="description" content="Laboratorio personal de IA generativa: orquestación de agentes, ingeniería asistida y evaluación de calidad.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -176,6 +176,10 @@ h1 .grad{
 .card:hover{border-color:rgba(61,220,151,.28);background:rgba(255,255,255,.035);transform:translateY(-3px)}
 .card:hover::after{opacity:1}
 .span-4{grid-column:span 4}.span-3{grid-column:span 3}.span-2{grid-column:span 2}
+@media(min-width:701px){
+  .card.filter-third{grid-column:span 2}
+  .card.filter-half{grid-column:span 3}
+}
 .card-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .cat{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-4)}
 .status{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:500;color:var(--ink-3);
@@ -280,7 +284,7 @@ footer{border-top:1px solid var(--border);padding:44px 0 52px;background:var(--b
     <div>
       <span class="eyebrow">Lab personal · rudy zenil</span>
       <h1>Sistemas de IA generativa,<br><span class="grad">construidos en voz propia.</span></h1>
-      <p class="hero-sub">Un laboratorio abierto de <b>orquestación de agentes</b> e <b>ingeniería asistida con GenAI</b>. Cada proyecto nace de un problema real y sobrevive solo si se usa.</p>
+      <p class="hero-sub">Un laboratorio abierto de <b>orquestación de agentes</b>, <b>ingeniería asistida con GenAI</b> y <b>evaluación de calidad</b>. Cada proyecto nace de un problema real y sobrevive solo si se usa.</p>
       <div class="cta-row">
         <a class="btn-primary" href="#proyectos">Explorar proyectos
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
@@ -300,9 +304,9 @@ footer{border-top:1px solid var(--border);padding:44px 0 52px;background:var(--b
 
 <section class="stats">
   <div class="container stats-inner">
-    <div class="stat reveal"><div class="n"><em>05</em></div><div class="l">Proyectos</div></div>
-    <div class="stat reveal"><div class="n">05</div><div class="l">Activos ahora</div></div>
-    <div class="stat reveal"><div class="n">02</div><div class="l">Frentes</div></div>
+    <div class="stat reveal"><div class="n"><em>10</em></div><div class="l">Proyectos</div></div>
+    <div class="stat reveal"><div class="n">10</div><div class="l">Activos ahora</div></div>
+    <div class="stat reveal"><div class="n">03</div><div class="l">Frentes</div></div>
     <div class="stat reveal"><div class="n">∞<em style="font-size:18px"> café</em></div><div class="l">Combustible</div></div>
   </div>
 </section>
@@ -310,13 +314,14 @@ footer{border-top:1px solid var(--border);padding:44px 0 52px;background:var(--b
 <main class="projects container" id="proyectos">
   <div class="sec-head reveal">
     <h2>El laboratorio</h2>
-    <p>Dos frentes: agentes que coordinan agentes e IA generativa aplicada a ingeniería seria.</p>
+    <p>Tres frentes: agentes que coordinan agentes, GenAI aplicada a ingeniería y evaluación verificable de calidad.</p>
   </div>
 
   <div class="filters reveal" role="tablist" aria-label="Filtrar proyectos">
     <button class="chip on" data-f="all">todos</button>
     <button class="chip" data-f="orquestacion">orquestación</button>
     <button class="chip" data-f="ingenieria">ingeniería gen-ai</button>
+    <button class="chip" data-f="evaluacion">evaluación &amp; calidad</button>
 
   </div>
 
@@ -367,6 +372,51 @@ footer{border-top:1px solid var(--border);padding:44px 0 52px;background:var(--b
       <div class="card-actions"><a class="card-action" href="https://github.com/rzenil/agent-harness-lab" target="_blank" rel="noopener">Repositorio ↗</a><a class="card-action download" href="https://github.com/rzenil/agent-harness-lab/archive/refs/heads/main.zip">Descargar ↓</a><a class="card-action kofi" href="https://ko-fi.com/rzenil" target="_blank" rel="noopener">Ko-fi ♥</a></div>
     </article>
 
+    <article class="card span-3 reveal" data-cat="evaluacion">
+      <span class="card-link sr"></span>
+      <div class="card-top"><span class="cat">Evaluación · Prompts</span><span class="status st-live"><i></i>Activo</span></div>
+      <h3>Prompt Regression Lab</h3>
+      <p>Gate determinista para comparar outputs candidatos contra una baseline. Valida requisitos, términos prohibidos, regex y longitud; reporta regresiones en JSON y Markdown.</p>
+      <div class="tags"><span class="tag">prompt evals</span><span class="tag">baseline diff</span><span class="tag">CI gate</span><span class="tag">offline</span></div>
+      <div class="card-actions"><a class="card-action" href="https://github.com/rzenil/prompt-regression-lab" target="_blank" rel="noopener">Repositorio ↗</a><a class="card-action download" href="https://github.com/rzenil/prompt-regression-lab/archive/refs/heads/main.zip">Descargar ↓</a><a class="card-action kofi" href="https://ko-fi.com/rzenil" target="_blank" rel="noopener">Ko-fi ♥</a></div>
+    </article>
+
+    <article class="card span-3 reveal" data-cat="evaluacion">
+      <span class="card-link sr"></span>
+      <div class="card-top"><span class="cat">Observabilidad · Routing</span><span class="status st-live"><i></i>Activo</span></div>
+      <h3>LLM Router Benchmark</h3>
+      <p>Compara rutas de modelo por éxito, calidad, latencia P50/P95, costo por respuesta exitosa y recuperación de fallback, con pesos explícitos y sin exponer API keys.</p>
+      <div class="tags"><span class="tag">model routing</span><span class="tag">latency</span><span class="tag">cost</span><span class="tag">fallbacks</span></div>
+      <div class="card-actions"><a class="card-action" href="https://github.com/rzenil/llm-router-benchmark" target="_blank" rel="noopener">Repositorio ↗</a><a class="card-action download" href="https://github.com/rzenil/llm-router-benchmark/archive/refs/heads/main.zip">Descargar ↓</a><a class="card-action kofi" href="https://ko-fi.com/rzenil" target="_blank" rel="noopener">Ko-fi ♥</a></div>
+    </article>
+
+    <article class="card span-2 reveal" data-cat="orquestacion">
+      <span class="card-link sr"></span>
+      <div class="card-top"><span class="cat">Seguridad · Tools</span><span class="status st-live"><i></i>Activo</span></div>
+      <h3>MCP &amp; Agent Tool Inspector</h3>
+      <p>Inspecciona manifests de tools/MCP: permisos, side effects, hosts, acceso a secretos y requisitos de aprobación humana. Genera JSON y dashboard HTML.</p>
+      <div class="tags"><span class="tag">MCP</span><span class="tag">permissions</span><span class="tag">risk scoring</span></div>
+      <div class="card-actions"><a class="card-action" href="https://github.com/rzenil/mcp-agent-tool-inspector" target="_blank" rel="noopener">Repositorio ↗</a><a class="card-action download" href="https://github.com/rzenil/mcp-agent-tool-inspector/archive/refs/heads/main.zip">Descargar ↓</a><a class="card-action kofi" href="https://ko-fi.com/rzenil" target="_blank" rel="noopener">Ko-fi ♥</a></div>
+    </article>
+
+    <article class="card span-2 reveal" data-cat="evaluacion">
+      <span class="card-link sr"></span>
+      <div class="card-top"><span class="cat">Calidad · Retrieval</span><span class="status st-live"><i></i>Activo</span></div>
+      <h3>RAG Quality Workbench</h3>
+      <p>Indexa Markdown local, recupera chunks con TF-IDF y evalúa Recall@K, MRR, cobertura de keywords y citas de fuente; sin embeddings ni APIs de pago.</p>
+      <div class="tags"><span class="tag">RAG</span><span class="tag">TF-IDF</span><span class="tag">Recall@K</span><span class="tag">MRR</span></div>
+      <div class="card-actions"><a class="card-action" href="https://github.com/rzenil/rag-quality-workbench" target="_blank" rel="noopener">Repositorio ↗</a><a class="card-action download" href="https://github.com/rzenil/rag-quality-workbench/archive/refs/heads/main.zip">Descargar ↓</a><a class="card-action kofi" href="https://ko-fi.com/rzenil" target="_blank" rel="noopener">Ko-fi ♥</a></div>
+    </article>
+
+    <article class="card span-2 reveal" data-cat="ingenieria">
+      <span class="card-link sr"></span>
+      <div class="card-top"><span class="cat">Ingeniería · Testing</span><span class="status st-live"><i></i>Activo</span></div>
+      <h3>Spec-to-Test Studio</h3>
+      <p>Convierte criterios de aceptación Markdown en matriz JSON/Markdown y escenarios Gherkin, con prioridades, cobertura y soporte Given/When/Then o Dado/Cuando/Entonces.</p>
+      <div class="tags"><span class="tag">specs</span><span class="tag">Gherkin</span><span class="tag">traceability</span></div>
+      <div class="card-actions"><a class="card-action" href="https://github.com/rzenil/spec-to-test-studio" target="_blank" rel="noopener">Repositorio ↗</a><a class="card-action download" href="https://github.com/rzenil/spec-to-test-studio/archive/refs/heads/main.zip">Descargar ↓</a><a class="card-action kofi" href="https://ko-fi.com/rzenil" target="_blank" rel="noopener">Ko-fi ♥</a></div>
+    </article>
+
 
 
   </div>
@@ -407,6 +457,7 @@ footer{border-top:1px solid var(--border);padding:44px 0 52px;background:var(--b
     {t:'  ● planner     idle      ox-alpha\n',c:'out'},
     {t:'  ● backend     running   kiro-sim build\n',c:'ok'},
     {t:'  ● librarian   indexing  obsidian kb (+12 notas)\n',c:'out'},
+    {t:'  ● evaluator   passing   21 checks ✓\n',c:'ok'},
 
     {t:'$ ',c:'prompt'},{t:'vercel deploy gen-ai-lab --prod\n',c:'cmd'},
     {t:'  ✓ Built in 4s → https://gen-ai-lab-ivory.vercel.app\n',c:'ok'},
@@ -488,13 +539,18 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 document.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{
   document.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));
   ch.classList.add('on');
-  const f=ch.dataset.f;let visible=0;
+  const f=ch.dataset.f;const visibleCards=[];
   document.querySelectorAll('#projGrid .card').forEach(card=>{
+    card.classList.remove('filter-third','filter-half');
     const show=f==='all'||card.dataset.cat===f;
     card.style.display=show?'':'none';
-    if(show)visible++;
+    if(show)visibleCards.push(card);
   });
-  document.getElementById('emptyMsg').style.display=visible?'none':'block';
+  if(f!=='all'){
+    const layoutClass=visibleCards.length===3?'filter-third':'filter-half';
+    visibleCards.forEach(card=>card.classList.add(layoutClass));
+  }
+  document.getElementById('emptyMsg').style.display=visibleCards.length?'none':'block';
 }));
 
 /* ---------- Card cursor glow ---------- */

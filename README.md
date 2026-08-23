@@ -15,6 +15,11 @@ Hub público de proyectos de IA generativa: orquestación de agentes, ingenierí
 | Kiro Lambda Benchmark | [GitHub](https://github.com/rzenil/kiro-lambda-benchmark) | [ZIP](https://github.com/rzenil/kiro-lambda-benchmark/archive/refs/heads/main.zip) |
 | Kiro Kafka · Fargate · Oracle Lab | [GitHub](https://github.com/rzenil/kiro-kafka-fargate-oracle-lab) | [ZIP](https://github.com/rzenil/kiro-kafka-fargate-oracle-lab/archive/refs/heads/main.zip) |
 | Agent Harness Lab | [GitHub](https://github.com/rzenil/agent-harness-lab) | [ZIP](https://github.com/rzenil/agent-harness-lab/archive/refs/heads/main.zip) |
+| Prompt Regression Lab | [GitHub](https://github.com/rzenil/prompt-regression-lab) | [ZIP](https://github.com/rzenil/prompt-regression-lab/archive/refs/heads/main.zip) |
+| LLM Router Benchmark | [GitHub](https://github.com/rzenil/llm-router-benchmark) | [ZIP](https://github.com/rzenil/llm-router-benchmark/archive/refs/heads/main.zip) |
+| MCP & Agent Tool Inspector | [GitHub](https://github.com/rzenil/mcp-agent-tool-inspector) | [ZIP](https://github.com/rzenil/mcp-agent-tool-inspector/archive/refs/heads/main.zip) |
+| RAG Quality Workbench | [GitHub](https://github.com/rzenil/rag-quality-workbench) | [ZIP](https://github.com/rzenil/rag-quality-workbench/archive/refs/heads/main.zip) |
+| Spec-to-Test Studio | [GitHub](https://github.com/rzenil/spec-to-test-studio) | [ZIP](https://github.com/rzenil/spec-to-test-studio/archive/refs/heads/main.zip) |
 
 
 
