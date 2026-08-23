@@ -16,9 +16,7 @@ Hub público de proyectos de IA generativa: orquestación de agentes, ingenierí
 | Kiro Kafka · Fargate · Oracle Lab | [GitHub](https://github.com/rzenil/kiro-kafka-fargate-oracle-lab) | [ZIP](https://github.com/rzenil/kiro-kafka-fargate-oracle-lab/archive/refs/heads/main.zip) |
 | Agent Harness Lab | [GitHub](https://github.com/rzenil/agent-harness-lab) | [ZIP](https://github.com/rzenil/agent-harness-lab/archive/refs/heads/main.zip) |
 | Parlay Scout | [GitHub](https://github.com/rzenil/parlay-scout-ev) | [ZIP](https://github.com/rzenil/parlay-scout-ev/archive/refs/heads/main.zip) |
-| VozMX IVR Agent | [GitHub](https://github.com/rzenil/vozmx-ivr-agent) | [ZIP](https://github.com/rzenil/vozmx-ivr-agent/archive/refs/heads/main.zip) |
-| Algora Bounty Hunter | [GitHub](https://github.com/rzenil/algora-bounty-hunter) | [ZIP](https://github.com/rzenil/algora-bounty-hunter/archive/refs/heads/main.zip) |
-| Matchday GenAI Studio | [GitHub](https://github.com/rzenil/matchday-genai-studio) | [ZIP](https://github.com/rzenil/matchday-genai-studio/archive/refs/heads/main.zip) |
+
 
 ## Desarrollo
 
