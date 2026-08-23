@@ -137,15 +137,6 @@ h1 .grad{
 .caret{display:inline-block;width:7px;height:15px;background:var(--accent);vertical-align:-2px;animation:blink 1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
 
-/* ============ STATS STRIP ============ */
-.stats{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg-panel)}
-.stats-inner{display:grid;grid-template-columns:repeat(4,1fr);}
-.stat{padding:30px 20px;text-align:left;border-left:1px solid var(--border)}
-.stat:first-child{border-left:none}
-.stat .n{font-size:32px;font-weight:600;letter-spacing:-.02em;font-family:var(--mono)}
-.stat .n em{font-style:normal;color:var(--accent)}
-.stat .l{font-size:12.5px;color:var(--ink-4);letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
-
 /* ============ PROJECTS ============ */
 .projects{padding:110px 28px 60px}
 .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:42px;flex-wrap:wrap}
@@ -223,6 +214,13 @@ h1 .grad{
 .pl-num{font-family:var(--mono);font-size:12px;color:var(--gold);padding-top:3px;min-width:30px}
 .pl-item h4{font-size:15.5px;font-weight:600;letter-spacing:-.01em;margin-bottom:4px}
 .pl-item p{font-size:13.5px;color:var(--ink-3)}
+.pl-proof{
+  display:inline-flex;align-items:center;gap:6px;margin-top:10px;
+  font-family:var(--mono);font-size:11px;font-weight:500;color:var(--accent);
+  border-bottom:1px dashed rgba(61,220,151,.35);padding-bottom:2px;
+  transition:border-color .18s,color .18s;
+}
+.pl-proof:hover{border-bottom-style:solid;border-color:rgba(61,220,151,.7);color:#5fe8b3}
 
 /* ============ FOOTER ============ */
 footer{border-top:1px solid var(--border);padding:44px 0 52px;background:var(--bg-panel)}
@@ -239,10 +237,6 @@ footer{border-top:1px solid var(--border);padding:44px 0 52px;background:var(--b
 @media(max-width:960px){
   .hero-grid{grid-template-columns:1fr;gap:48px}
   .hero{padding:140px 0 76px}
-  .stats-inner{grid-template-columns:repeat(2,1fr)}
-  .stat:nth-child(3){border-left:none}
-  .stat{border-top:1px solid var(--border)}
-  .stat:nth-child(-n+2){border-top:none}
   .principles-grid{grid-template-columns:1fr;gap:36px}
 }
 @media(max-width:700px){
@@ -301,15 +295,6 @@ footer{border-top:1px solid var(--border);padding:44px 0 52px;background:var(--b
     </div>
   </div>
 </header>
-
-<section class="stats">
-  <div class="container stats-inner">
-    <div class="stat reveal"><div class="n"><em>10</em></div><div class="l">Proyectos</div></div>
-    <div class="stat reveal"><div class="n">10</div><div class="l">Activos ahora</div></div>
-    <div class="stat reveal"><div class="n">03</div><div class="l">Frentes</div></div>
-    <div class="stat reveal"><div class="n">∞<em style="font-size:18px"> café</em></div><div class="l">Combustible</div></div>
-  </div>
-</section>
 
 <main class="projects container" id="proyectos">
   <div class="sec-head reveal">
@@ -430,10 +415,10 @@ footer{border-top:1px solid var(--border);padding:44px 0 52px;background:var(--b
       <p class="lead">Reglas extraídas de decisiones reales (ADRs), no de un manifiesto bonito. Lo que rompe una regla, se documenta o se elimina.</p>
     </div>
     <div class="plist reveal">
-      <div class="pl-item"><span class="pl-num">01</span><div><h4>Human-in-the-loop obligatorio</h4><p>Ningún agente escribe en conocimiento canónico ni abre PRs sin aprobación explícita. Los agentes proponen; el humano promueve.</p></div></div>
-      <div class="pl-item"><span class="pl-num">02</span><div><h4>Fuentes vivas &gt; memoria importada</h4><p>Lo que dice el sistema hoy pesa más que lo que un export recordó ayer. Toda nota importa procedencia y riesgo de obsolescencia.</p></div></div>
-      <div class="pl-item"><span class="pl-num">03</span><div><h4>Medir antes de atribuir</h4><p>Si Kiro ahorra tiempo, se cronometra. Si el modelo acierta, se registra la calibración. Sin métricas no hay conclusión.</p></div></div>
-      <div class="pl-item"><span class="pl-num">04</span><div><h4>Gratis y barato primero</h4><p>Free tiers, modelos abiertos y crons en lugar de servidores. Un lab que quema dinero deja de ser un experimento.</p></div></div>
+      <div class="pl-item"><span class="pl-num">01</span><div><h4>Human-in-the-loop obligatorio</h4><p>Ningún agente escribe en conocimiento canónico ni abre PRs sin aprobación explícita. Los agentes proponen; el humano promueve.</p><a class="pl-proof" href="#projGrid" data-goto="orquestacion">Ver en Obsidian Multi-Agent KB →</a></div></div>
+      <div class="pl-item"><span class="pl-num">02</span><div><h4>Fuentes vivas &gt; memoria importada</h4><p>Lo que dice el sistema hoy pesa más que lo que un export recordó ayer. Toda nota importa procedencia y riesgo de obsolescencia.</p><a class="pl-proof" href="#projGrid" data-goto="evaluacion">Ver en LLM Router Benchmark →</a></div></div>
+      <div class="pl-item"><span class="pl-num">03</span><div><h4>Medir antes de atribuir</h4><p>Si Kiro ahorra tiempo, se cronometra. Si el modelo acierta, se registra la calibración. Sin métricas no hay conclusión.</p><a class="pl-proof" href="#projGrid" data-goto="ingenieria">Ver en Kiro vs. Manual →</a></div></div>
+      <div class="pl-item"><span class="pl-num">04</span><div><h4>Gratis y barato primero</h4><p>Free tiers, modelos abiertos y crons en lugar de servidores. Un lab que quema dinero deja de ser un experimento.</p><a class="pl-proof" href="#projGrid" data-goto="evaluacion">Ver en RAG Quality Workbench →</a></div></div>
     </div>
   </div>
 </section>
@@ -536,10 +521,9 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
 /* ---------- Filters ---------- */
-document.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{
-  document.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));
-  ch.classList.add('on');
-  const f=ch.dataset.f;const visibleCards=[];
+function applyFilter(f){
+  document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c.dataset.f===f));
+  const visibleCards=[];
   document.querySelectorAll('#projGrid .card').forEach(card=>{
     card.classList.remove('filter-third','filter-half');
     const show=f==='all'||card.dataset.cat===f;
@@ -551,6 +535,16 @@ document.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{
     visibleCards.forEach(card=>card.classList.add(layoutClass));
   }
   document.getElementById('emptyMsg').style.display=visibleCards.length?'none':'block';
+}
+document.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>applyFilter(ch.dataset.f)));
+
+/* ---------- Principle proof-links: filtra y lleva al proyecto ---------- */
+document.querySelectorAll('.pl-proof').forEach(a=>a.addEventListener('click',e=>{
+  e.preventDefault();
+  applyFilter(a.dataset.goto);
+  const grid=document.getElementById('projGrid');
+  const first=grid.querySelector('.card:not([style*="none"])');
+  (first||grid).scrollIntoView({behavior:'smooth',block:'start'});
 }));
 
 /* ---------- Card cursor glow ---------- */
