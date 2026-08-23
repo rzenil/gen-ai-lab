@@ -1,4 +1,4 @@
-# gen·ai lab — Rudy Zenil
+# rzenil.lab — Rudy Zenil
 
 [![Live](https://img.shields.io/badge/live-Vercel-3ddc97?logo=vercel)](https://gen-ai-lab-ivory.vercel.app)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-apoya%20el%20lab-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/rzenil)
