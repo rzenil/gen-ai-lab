@@ -280,7 +280,7 @@ footer{border-top:1px solid var(--border);padding:44px 0 52px;background:var(--b
     <div>
       <span class="eyebrow">Lab personal · rudy zenil</span>
       <h1>Sistemas de IA generativa,<br><span class="grad">construidos en voz propia.</span></h1>
-      <p class="hero-sub">Cada herramienta de este laboratorio corre hoy: <b>benchmarks con corridas reales</b>, gates de calidad listos para CI y agentes con guardrails verificables. Descárgalo, ejecútalo y compruébalo — <b>sin API keys ni infra de pago.</b></p>
+      <p class="hero-sub">Cada herramienta de este laboratorio corre hoy: <b>benchmarks con corridas reales</b>, gates de calidad listos para CI y agentes con guardrails verificables. Descárgalo, ejecútalo y compruébalo — <b>casi todo corre sin API keys ni infra de pago.</b></p>
       <div class="cta-row">
         <a class="btn-primary" href="#proyectos">Explorar proyectos
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
@@ -324,7 +324,7 @@ footer{border-top:1px solid var(--border);padding:44px 0 52px;background:var(--b
       <div class="card-actions"><a class="card-action" href="https://github.com/rzenil/hermes-agent-config-studio" target="_blank" rel="noopener">Repositorio ↗</a><a class="card-action download" href="https://github.com/rzenil/hermes-agent-config-studio/archive/refs/heads/main.zip">Descargar ↓</a></div>
     </article>
 
-    <article class="card span-2 reveal" data-cat="orquestacion">
+    <article class="card span-2 reveal" data-cat="orquestacion" id="card-obsidian-kb">
       <span class="card-link sr"></span>
       <div class="card-top"><span class="cat">Memoria gobernada</span><span class="status st-live"><i></i>Activo</span></div>
       <h3>Obsidian Multi-Agent KB</h3>
@@ -334,12 +334,13 @@ footer{border-top:1px solid var(--border);padding:44px 0 52px;background:var(--b
       <div class="card-actions"><a class="card-action" href="https://github.com/rzenil/obsidian-agent-governance" target="_blank" rel="noopener">Repositorio ↗</a><a class="card-action download" href="https://github.com/rzenil/obsidian-agent-governance/archive/refs/heads/main.zip">Descargar ↓</a></div>
     </article>
 
-    <article class="card span-2 reveal" data-cat="ingenieria">
+    <article class="card span-2 reveal" data-cat="ingenieria" id="card-kiro-benchmark">
       <span class="card-link sr"></span>
       <div class="card-top"><span class="cat">Benchmark</span><span class="status st-live"><i></i>Activo</span></div>
       <h3>Kiro vs. Manual</h3>
       <p>Comparativa formal: cinco AWS Lambdas en Java construidas dos veces — una manual, otra asistida con Kiro. Se mide velocidad, retrabajo, defectos y cobertura, no vibes.</p>
       <div class="tags"><span class="tag">Kiro</span><span class="tag">AWS Lambda</span><span class="tag">Java</span><span class="tag">métricas</span></div>
+      <div class="card-proof">Protocolo de medición publicado: tiempo, retrabajo, defectos y cobertura por Lambda.</div>
       <div class="card-actions"><a class="card-action" href="https://github.com/rzenil/kiro-lambda-benchmark" target="_blank" rel="noopener">Repositorio ↗</a><a class="card-action download" href="https://github.com/rzenil/kiro-lambda-benchmark/archive/refs/heads/main.zip">Descargar ↓</a></div>
     </article>
 
@@ -373,13 +374,13 @@ footer{border-top:1px solid var(--border);padding:44px 0 52px;background:var(--b
       <div class="card-actions"><a class="card-action" href="https://github.com/rzenil/prompt-regression-lab" target="_blank" rel="noopener">Repositorio ↗</a><a class="card-action download" href="https://github.com/rzenil/prompt-regression-lab/archive/refs/heads/main.zip">Descargar ↓</a></div>
     </article>
 
-    <article class="card span-3 reveal" data-cat="evaluacion">
+    <article class="card span-3 reveal" data-cat="evaluacion" id="card-router-benchmark">
       <span class="card-link sr"></span>
       <div class="card-top"><span class="cat">Observabilidad · Routing</span><span class="status st-live"><i></i>Activo</span></div>
       <h3>LLM Router Benchmark</h3>
       <p>Compara rutas de modelo por éxito, calidad, latencia P50/P95, costo por respuesta exitosa y recuperación de fallback. Incluye collector de corridas reales contra OpenRouter con fallback automático y ranking sobre datos live.</p>
       <div class="tags"><span class="tag">model routing</span><span class="tag">latency</span><span class="tag">cost</span><span class="tag">fallbacks</span><span class="tag">OpenRouter live</span></div>
-      <div class="card-proof">18 corridas reales publicadas: detectó 429 masivos y recuperó 100% por fallback.</div>
+      <div class="card-proof">18 corridas reales publicadas: 9 cayeron a fallback y las 9 se recuperaron.</div>
       <div class="card-actions"><a class="card-action" href="https://github.com/rzenil/llm-router-benchmark" target="_blank" rel="noopener">Repositorio ↗</a><a class="card-action download" href="https://github.com/rzenil/llm-router-benchmark/archive/refs/heads/main.zip">Descargar ↓</a></div>
     </article>
 
@@ -393,7 +394,7 @@ footer{border-top:1px solid var(--border);padding:44px 0 52px;background:var(--b
       <div class="card-actions"><a class="card-action" href="https://github.com/rzenil/mcp-agent-tool-inspector" target="_blank" rel="noopener">Repositorio ↗</a><a class="card-action download" href="https://github.com/rzenil/mcp-agent-tool-inspector/archive/refs/heads/main.zip">Descargar ↓</a></div>
     </article>
 
-    <article class="card span-2 reveal" data-cat="evaluacion">
+    <article class="card span-2 reveal" data-cat="evaluacion" id="card-rag-workbench">
       <span class="card-link sr"></span>
       <div class="card-top"><span class="cat">Calidad · Retrieval</span><span class="status st-live"><i></i>Activo</span></div>
       <h3>RAG Quality Workbench</h3>
@@ -426,10 +427,10 @@ footer{border-top:1px solid var(--border);padding:44px 0 52px;background:var(--b
       <p class="lead">Reglas extraídas de decisiones reales (ADRs), no de un manifiesto bonito. Lo que rompe una regla, se documenta o se elimina.</p>
     </div>
     <div class="plist reveal">
-      <div class="pl-item"><span class="pl-num">01</span><div><h4>Human-in-the-loop obligatorio</h4><p>Ningún agente escribe en conocimiento canónico ni abre PRs sin aprobación explícita. Los agentes proponen; el humano promueve.</p><a class="pl-proof" href="#projGrid" data-goto="orquestacion">Ver en Obsidian Multi-Agent KB →</a></div></div>
-      <div class="pl-item"><span class="pl-num">02</span><div><h4>Fuentes vivas &gt; memoria importada</h4><p>Lo que dice el sistema hoy pesa más que lo que un export recordó ayer. Toda nota importa procedencia y riesgo de obsolescencia.</p><a class="pl-proof" href="#projGrid" data-goto="evaluacion">Ver en LLM Router Benchmark →</a></div></div>
-      <div class="pl-item"><span class="pl-num">03</span><div><h4>Medir antes de atribuir</h4><p>Si Kiro ahorra tiempo, se cronometra. Si el modelo acierta, se registra la calibración. Sin métricas no hay conclusión.</p><a class="pl-proof" href="#projGrid" data-goto="ingenieria">Ver en Kiro vs. Manual →</a></div></div>
-      <div class="pl-item"><span class="pl-num">04</span><div><h4>Gratis y barato primero</h4><p>Free tiers, modelos abiertos y crons en lugar de servidores. Un lab que quema dinero deja de ser un experimento.</p><a class="pl-proof" href="#projGrid" data-goto="evaluacion">Ver en RAG Quality Workbench →</a></div></div>
+      <div class="pl-item"><span class="pl-num">01</span><div><h4>Human-in-the-loop obligatorio</h4><p>Ningún agente escribe en conocimiento canónico ni abre PRs sin aprobación explícita. Los agentes proponen; el humano promueve.</p><a class="pl-proof" href="#projGrid" data-goto="orquestacion" data-target="card-obsidian-kb">Ver en Obsidian Multi-Agent KB →</a></div></div>
+      <div class="pl-item"><span class="pl-num">02</span><div><h4>Fuentes vivas &gt; memoria importada</h4><p>Lo que dice el sistema hoy pesa más que lo que un export recordó ayer. Toda nota importa procedencia y riesgo de obsolescencia.</p><a class="pl-proof" href="#projGrid" data-goto="evaluacion" data-target="card-router-benchmark">Ver en LLM Router Benchmark →</a></div></div>
+      <div class="pl-item"><span class="pl-num">03</span><div><h4>Medir antes de atribuir</h4><p>Si Kiro ahorra tiempo, se cronometra. Si el modelo acierta, se registra la calibración. Sin métricas no hay conclusión.</p><a class="pl-proof" href="#projGrid" data-goto="ingenieria" data-target="card-kiro-benchmark">Ver en Kiro vs. Manual →</a></div></div>
+      <div class="pl-item"><span class="pl-num">04</span><div><h4>Gratis y barato primero</h4><p>Free tiers, modelos abiertos y crons en lugar de servidores. Un lab que quema dinero deja de ser un experimento.</p><a class="pl-proof" href="#projGrid" data-goto="evaluacion" data-target="card-rag-workbench">Ver en RAG Quality Workbench →</a></div></div>
     </div>
   </div>
 </section>
@@ -553,9 +554,8 @@ document.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>a
 document.querySelectorAll('.pl-proof').forEach(a=>a.addEventListener('click',e=>{
   e.preventDefault();
   applyFilter(a.dataset.goto);
-  const grid=document.getElementById('projGrid');
-  const first=grid.querySelector('.card:not([style*="none"])');
-  (first||grid).scrollIntoView({behavior:'smooth',block:'start'});
+  const target=document.getElementById(a.dataset.target)||document.getElementById('projGrid');
+  target.scrollIntoView({behavior:'smooth',block:'start'});
 }));
 
 /* ---------- Card cursor glow ---------- */
